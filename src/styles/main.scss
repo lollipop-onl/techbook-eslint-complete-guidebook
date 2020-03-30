@@ -1,0 +1,30 @@
+@page {
+  margin: 0;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  padding: 43.5mm 31mm;
+}
+
+.outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid #f00;
+}
+
+.outline::before {
+  content: counter(page-counter);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}

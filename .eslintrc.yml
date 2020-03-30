@@ -1,0 +1,19 @@
+root: true
+env:
+  browser: true
+  node: true
+extends:
+  - '@nuxtjs/eslint-config-typescript'
+  - plugin:prettier/recommended
+  - prettier/@typescript-eslint
+parserOptions:
+  warnOnUnsupportedTypeScriptVersion: false
+rules:
+  no-unused-vars: 'off'
+  '@typescript-eslint/no-unused-vars':
+    - warn
+    - args: after-used
+overrides:
+  - files: ['*.vue']
+    rules:
+      class-methods-use-this: 'off'
