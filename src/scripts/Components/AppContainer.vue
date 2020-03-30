@@ -5,8 +5,7 @@
 </template>
 
 <script lang="ts">
-import { bind, debounce } from 'helpful-decorators';
-import { Component, Ref, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class AppContainer extends Vue {}
@@ -21,8 +20,14 @@ export default class AppContainer extends Vue {}
   }
 
   & > .container {
-    width: $page-width;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    @media screen {
+      width: $page-width;
+      height: 100%;
+      margin: 0 auto;
+    }
   }
 }
 </style>

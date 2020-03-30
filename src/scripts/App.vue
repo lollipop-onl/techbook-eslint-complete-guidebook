@@ -2,19 +2,22 @@
   .root-app
     AppGuide.guide
     AppContainer
-      template(v-for="n in 100")
-        h1 hello you.
+      AppPage(v-for="x in 10")
+        template(v-for="n in 10")
+          h1 hello you.
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import AppGuide from "./Components/AppGuide.vue";
 import AppContainer from "./Components/AppContainer.vue";
+import AppPage from "./Components/AppPage.vue";
 
 @Component({
   components: {
     AppGuide,
-    AppContainer
+    AppContainer,
+    AppPage
   }
 })
 export default class  extends Vue {
