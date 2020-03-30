@@ -26,13 +26,12 @@ export default class AppGuide extends Vue {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/resources';
+
 .app-guide {
   & {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 148mm;
-    height: 210mm;
+    width: $page-width;
+    height: $page-height;
     background: rgba(#f00, 10%);
     transform: translate(-50%, -50%);
   }
