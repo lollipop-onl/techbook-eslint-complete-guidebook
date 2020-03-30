@@ -3,6 +3,7 @@
     AppGuide.guide
     AppContainer
       AppPage(v-for="x in 10")
+        .custom-heading This is heading.
         template(v-for="n in 10")
           h1 hello you.
 </template>
@@ -25,6 +26,8 @@ export default class  extends Vue {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/resources';
+
 .root-app {
   & > .guide {
     position: fixed;
@@ -35,5 +38,11 @@ export default class  extends Vue {
       visibility: hidden;
     }
   }
+}
+
+.custom-heading {
+  margin-top: -$guide-margin;
+  padding: calc(5mm + #{$guide-margin}) 2mm 5mm;
+  border-left: 10px solid #f00;
 }
 </style>

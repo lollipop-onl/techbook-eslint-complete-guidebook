@@ -1,8 +1,8 @@
 <template lang="pug">
 .app-page
   .number(v-if="num != null") {{ num }}
-  .nomble
   .page
+    .nomble
     slot
 </template>
 
@@ -12,8 +12,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class AppPage extends Vue {
   /** ページ番号 */
-  @Prop({ type: Number, default: 1 })
-  num: number;
+  @Prop({ type: Number })
+  num?: number;
 }
 </script>
 
@@ -47,6 +47,28 @@ export default class AppPage extends Vue {
       width: $page-width;
       height: $page-height;
       transform: translate(-50%, -50%);
+    }
+
+    @media screen {
+      padding: $guide-margin 0;
+      border-bottom: 2px solid $_guide-border;
+    }
+  }
+
+  & > .page > .nomble {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    font-size: 10px;
+    transform: translate(-100%, -50%);
+  }
+
+  & > .page > .nomble::before {
+    counter-increment: page-nomble;
+    content: counter(page-nomble);
+
+    @media screen {
+      display: none;
     }
   }
 }

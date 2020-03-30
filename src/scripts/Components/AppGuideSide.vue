@@ -31,7 +31,7 @@ export default class AppGuideSide extends Vue {
     left: 50%;
     width: $guide-base-length * 1.5;
     height: 1px;
-    background: #ccc;
+    background: $_guide-border;
     transform: translate(-50%, -1px);
   }
 
@@ -40,7 +40,7 @@ export default class AppGuideSide extends Vue {
     left: 50%;
     width: 1px;
     height: $guide-base-length - $guide-margin;
-    background: #ccc;
+    background: $_guide-border;
     transform: translate(-50%, 0);
   }
 }

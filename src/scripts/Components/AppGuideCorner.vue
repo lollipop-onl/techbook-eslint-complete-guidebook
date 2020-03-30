@@ -24,7 +24,7 @@ export default class AppGuideCorner extends Vue {
   &::after{
     position: absolute;
     content: '';
-    border-color: #ccc;
+    border-color: $_guide-border;
     border-style: solid;
     border-width: 0 1px 1px 0;
   }

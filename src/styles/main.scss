@@ -4,3 +4,7 @@
 @page {
   margin: 0;
 }
+
+body {
+  counter-reset: page-nomble;
+}
