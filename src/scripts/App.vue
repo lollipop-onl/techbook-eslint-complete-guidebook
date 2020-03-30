@@ -21,8 +21,7 @@ import AppPage from "./Components/AppPage.vue";
     AppPage
   }
 })
-export default class  extends Vue {
-}
+export default class  extends Vue {}
 </script>
 
 <style lang="scss" scoped>

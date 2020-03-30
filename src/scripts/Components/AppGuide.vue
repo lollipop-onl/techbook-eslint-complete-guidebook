@@ -1,5 +1,8 @@
 <template lang="pug">
 .app-guide
+  .border.-outline
+  .border.-limitation
+  .border.-container
   AppGuideCorner.corner.-top.-left
   AppGuideCorner.corner.-top.-right
   AppGuideCorner.corner.-bottom.-left
@@ -32,8 +35,31 @@ export default class AppGuide extends Vue {
   & {
     width: $page-width;
     height: $page-height;
-    background: rgba(#f00, 10%);
     transform: translate(-50%, -50%);
+  }
+
+  & > .border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed $_guide-border;
+    transform: translate(-50%, -50%);
+  }
+
+  & > .border.-outline {
+    width: $page-width;
+    height: $page-height;
+    border-style: solid;
+  }
+
+  & > .border.-limitation {
+    width: $page-width - 6mm;
+    height: $page-height - 6mm;
+  }
+
+  & > .border.-container {
+    width: $page-width - 24mm;
+    height: $page-height - 30mm;
   }
 
   & > .corner {

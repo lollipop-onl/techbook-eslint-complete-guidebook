@@ -40,18 +40,19 @@ export default class AppPage extends Vue {
   }
 
   & > .page {
+    width: $page-width;
+    height: $page-height;
+
     @media print {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: $page-width;
-      height: $page-height;
       transform: translate(-50%, -50%);
     }
 
     @media screen {
-      padding: $guide-margin 0;
-      border-bottom: 2px solid $_guide-border;
+      margin: 10px 0 0 -#{$guide-margin};
+      border: $guide-margin solid #eee;
     }
   }
 
@@ -66,10 +67,6 @@ export default class AppPage extends Vue {
   & > .page > .nomble::before {
     counter-increment: page-nomble;
     content: counter(page-nomble);
-
-    @media screen {
-      display: none;
-    }
   }
 }
 </style>
