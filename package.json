@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/lollipop-onl/techbook-eslint-complete-guidebook.git",
   "author": "tamuraryoya <tamuraryoya@team-lab.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/views/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  }
 }
