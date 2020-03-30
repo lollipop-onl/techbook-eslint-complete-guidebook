@@ -1,0 +1,8 @@
+{
+  "name": "techbook-eslint-complete-guidebook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lollipop-onl/techbook-eslint-complete-guidebook.git",
+  "author": "tamuraryoya <tamuraryoya@team-lab.com>",
+  "license": "MIT"
+}
