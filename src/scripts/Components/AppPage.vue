@@ -2,14 +2,20 @@
 .app-page
   .number(v-if="num != null") {{ num }}
   .page
+    AppGuideBorder.border
     .nomble
     slot
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import AppGuideBorder from "./AppGuideBorder.vue";
 
-@Component
+@Component({
+  components: {
+    AppGuideBorder
+  }
+})
 export default class AppPage extends Vue {
   /** ページ番号 */
   @Prop({ type: Number })
@@ -40,20 +46,23 @@ export default class AppPage extends Vue {
   }
 
   & > .page {
+    position: relative;
     width: $page-width;
     height: $page-height;
 
     @media print {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      @include position-center;
     }
 
     @media screen {
       margin: 10px 0 0 -#{$guide-margin};
       border: $guide-margin solid #eee;
     }
+  }
+
+  & > .page > .border {
+    @include position-center;
+    pointer-events: none;
   }
 
   & > .page > .nomble {
