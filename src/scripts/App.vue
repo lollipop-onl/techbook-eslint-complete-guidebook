@@ -4,6 +4,8 @@
     AppContainer
       TitlePage
       ColophonPage
+      AppPage
+        CodeBlockDiff
       AppPage(v-for="x in 10")
         .custom-heading This is heading.
         .container
@@ -22,6 +24,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import AppGuide from "./Components/AppGuide.vue";
 import AppContainer from "./Components/AppContainer.vue";
 import AppPage from "./Components/AppPage.vue";
+import CodeBlockDiff from "./Components/CodeBlockDiff.vue";
 import TitlePage from "./Components/TitlePage.vue";
 import ColophonPage from "./Components/ColophonPage.vue";
 
@@ -30,6 +33,7 @@ import ColophonPage from "./Components/ColophonPage.vue";
     AppGuide,
     AppContainer,
     AppPage,
+    CodeBlockDiff,
     TitlePage,
     ColophonPage
   }

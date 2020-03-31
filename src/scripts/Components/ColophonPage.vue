@@ -47,22 +47,25 @@ export default class ColophonPage extends Vue {
     @include container;
     position: relative;
     height: $page-height - $guide-inside-margin-vertical * 2;
-    overflow: hidden;
     font-family: 筑紫B丸ゴシック, sans-serif;
   }
 
   & > .colophon {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: -$guide-inside-margin-horizontal - $guide-margin;
   }
 }
 
 .book-title {
+  & {
+    padding-right: $guide-inside-margin-horizontal + $guide-margin;
+  }
+
   &::after {
     display: block;
-    height: 1mm;
+    width: calc(100% + #{$guide-inside-margin-horizontal + $guide-margin});
+    height: 3px;
     margin-top: 2mm;
     content: '';
     border-top: 1px solid #000;
@@ -94,11 +97,7 @@ export default class ColophonPage extends Vue {
   & {
     margin-top: 6mm;
     font-size: 9pt;
-  }
-
-  & > .date,
-  & > .note {
-    margin-bottom: 2mm;
+    line-height: 1.8;
   }
 
   & > .date {
