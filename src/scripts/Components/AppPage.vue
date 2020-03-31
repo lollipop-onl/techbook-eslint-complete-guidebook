@@ -2,7 +2,7 @@
 .app-page
   .number(v-if="num != null") {{ num }}
   .page
-    AppGuideBorder.border
+    AppGuideBorder.border(v-show="false")
     .nomble
     slot
 </template>

@@ -5,3 +5,35 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// コンテナ（上下左右）
+@mixin container($target: inside) {
+  @include container-horizontal($target);
+  @include container-vertical($target);
+}
+
+// コンテナ（左右）
+@mixin container-horizontal($target: inside) {
+  @if $target == outside {
+    margin-left: $guide-outside-margin-horizontal;
+    margin-right: $guide-outside-margin-horizontal;
+  }
+
+  @else {
+    margin-left: $guide-inside-margin-horizontal;
+    margin-right: $guide-inside-margin-horizontal;
+  }
+}
+
+// コンテナ（上下）
+@mixin container-vertical($target: inside) {
+  @if $target == outside {
+    margin-top: $guide-outside-margin-vertical;
+    margin-bottom: $guide-outside-margin-vertical;
+  }
+
+  @else {
+    margin-top: $guide-inside-margin-vertical;
+    margin-bottom: $guide-inside-margin-vertical;
+  }
+}

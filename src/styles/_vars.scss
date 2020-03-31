@@ -24,19 +24,35 @@ $page-width: $paper-a5-width;
 // ページの高さ
 $page-height: $paper-a5-height;
 
-// ページの高さ
-
 // ページとガイドの余白
 $guide-margin: 5mm;
 
 // ガイドのベースの長さ
 $guide-base-length: 20mm;
 
+// 外側の推奨余白（横）
+$guide-outside-margin-horizontal: 3mm;
+
+// 外側の推奨余白（縦）
+  $guide-outside-margin-vertical: 3mm;
+
+// 内側の推奨余白（横）
+$guide-inside-margin-horizontal: 12mm;
+
+// 内側の推奨余白（縦）
+$guide-inside-margin-vertical: 15mm;
+
 // --------------------- //
-// フォントサイズ関連の変数 //
+// フォント関連の変数 //
 // --------------------- //
 // ベースのフォントサイズ
 $font-size-base: 9pt;
+
+// タイトルのフォントファミリー
+$font-family-title: URW DIN Cond, sans-serif;
+
+// 本文のフォントファミリー
+$font-family-body: sans-serif;
 
 // ---------- //
 // 色関連の変数 //
