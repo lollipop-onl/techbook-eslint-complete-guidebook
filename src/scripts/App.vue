@@ -4,6 +4,7 @@
     AppContainer
       TitlePage
       AttentionPage
+      PrefacePage
       ColophonPage
 </template>
 
@@ -14,6 +15,7 @@ import AppContainer from "./Components/AppContainer.vue";
 import AppPage from "./Components/AppPage.vue";
 import TitlePage from "./Components/TitlePage.vue";
 import AttentionPage from "./Components/AttentionPage.vue";
+import PrefacePage from "./Components/PrefacePage.vue";
 import ColophonPage from "./Components/ColophonPage.vue";
 
 @Component({
@@ -23,6 +25,7 @@ import ColophonPage from "./Components/ColophonPage.vue";
     AppPage,
     TitlePage,
     AttentionPage,
+    PrefacePage,
     ColophonPage
   }
 })
