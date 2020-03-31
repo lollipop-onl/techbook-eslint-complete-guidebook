@@ -6,6 +6,12 @@ AppPage
     .paragraph
       | この本は、フロントエンドエンジニアがGitHub Actionsを使ってみたら開発効率が爆上がりしたからみんなも使おうぜ、というモチベによって書かれたフロントエンジニアのためのGitHub Actions入門書です。
       | 普段CIやCDといったサービスを使う機会が少ないフロントエンドエンジニアのために、実践的なワークフローを作りながらGitHub Actionsの基本的な機能とワークフロー作成の流れをご紹介します。
+    .paragraph
+      | この本は、フロントエンドエンジニアがGitHub Actionsを使ってみたら開発効率が爆上がりしたからみんなも使おうぜ、というモチベによって書かれたフロントエンジニアのためのGitHub Actions入門書です。
+      | 普段CIやCDといったサービスを使う機会が少ないフロントエンドエンジニアのために、実践的なワークフローを作りながらGitHub Actionsの基本的な機能とワークフロー作成の流れをご紹介します。
+    .paragraph
+      | この本は、フロントエンドエンジニアがGitHub Actionsを使ってみたら開発効率が爆上がりしたからみんなも使おうぜ、というモチベによって書かれたフロントエンジニアのためのGitHub Actions入門書です。
+      | 普段CIやCDといったサービスを使う機会が少ないフロントエンドエンジニアのために、実践的なワークフローを作りながらGitHub Actionsの基本的な機能とワークフロー作成の流れをご紹介します。
     .author 著　者
 </template>
 
@@ -49,7 +55,7 @@ export default class PrefacePage extends Vue {
   }
 
   & > .paragraph + .paragraph {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 
   & > .author {
