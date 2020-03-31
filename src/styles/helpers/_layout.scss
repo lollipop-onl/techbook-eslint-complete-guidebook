@@ -37,3 +37,14 @@
     margin-bottom: $guide-inside-margin-vertical;
   }
 }
+
+// コンテナの高さを最大にする
+@mixin container-full($target: inside) {
+  @if $target == inside {
+    height: $page-height - $guide-inside-margin-vertical * 2;
+  }
+
+  @else {
+    height: $page-height - $guide-outside-margin-vertical * 2;
+  }
+}

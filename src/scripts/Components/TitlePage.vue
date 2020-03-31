@@ -26,8 +26,8 @@ export default class TitlePage extends Vue {
 .title-page {
   & {
     @include container;
+    @include container-full;
     position: relative;
-    height: $page-height - $guide-inside-margin-vertical * 2;
     overflow: hidden;
     font-family: $font-family-sans-serif;
     text-align: center;

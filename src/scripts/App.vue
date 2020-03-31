@@ -3,6 +3,7 @@
     AppGuide.guide
     AppContainer
       TitlePage
+      AttentionPage
       ColophonPage
 </template>
 
@@ -12,6 +13,7 @@ import AppGuide from "./Components/AppGuide.vue";
 import AppContainer from "./Components/AppContainer.vue";
 import AppPage from "./Components/AppPage.vue";
 import TitlePage from "./Components/TitlePage.vue";
+import AttentionPage from "./Components/AttentionPage.vue";
 import ColophonPage from "./Components/ColophonPage.vue";
 
 @Component({
@@ -20,6 +22,7 @@ import ColophonPage from "./Components/ColophonPage.vue";
     AppContainer,
     AppPage,
     TitlePage,
+    AttentionPage,
     ColophonPage
   }
 })
