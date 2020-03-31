@@ -23,7 +23,7 @@ AppPage
         .body contact@simochee.net
         .label 印刷・製本
         .body 有限会社 ねこのしっぽ
-      .footer-copyright &copy; 2020 Lollipop Launcher
+      .footer-copyright &copy; 2020 LollipopLauncher
 </template>
 
 <script lang="ts">
@@ -47,7 +47,7 @@ export default class ColophonPage extends Vue {
     @include container;
     position: relative;
     height: $page-height - $guide-inside-margin-vertical * 2;
-    font-family: 筑紫B丸ゴシック, sans-serif;
+    font-family: $font-family-sans-serif;
   }
 
   & > .colophon {
@@ -87,7 +87,7 @@ export default class ColophonPage extends Vue {
   & > .title > .small {
     margin-left: 2mm;
     font-size: 10pt;
-    font-family: URW DIN, sans-serif;
+    font-family: $font-family-title-sub;
     font-style: normal;
     font-weight: 500;
   }
@@ -97,12 +97,17 @@ export default class ColophonPage extends Vue {
   & {
     margin-top: 6mm;
     font-size: 9pt;
-    line-height: 1.8;
+    font-family: $font-family-serif;
+    line-height: 1.2;
   }
 
   & > .date {
     float: left;
     width: 9em;
+  }
+
+  & > .note {
+    letter-spacing: 0.2em;
   }
 
   & > .note::after {
@@ -115,7 +120,7 @@ export default class ColophonPage extends Vue {
 .book-information {
   & {
     margin-top: 3mm;
-    font-family: serif;
+    font-family: $font-family-serif;
     font-size: 10pt;
     line-height: 1.8;
   }
@@ -133,7 +138,7 @@ export default class ColophonPage extends Vue {
 .footer-copyright {
   padding-top: 3mm;
   margin-top: 6mm;
-  font-family: URW DIN, sans-serif;
+  font-family: $font-family-title-sub;
   font-size: 9pt;
   border-top: 1px solid #000000;
 }

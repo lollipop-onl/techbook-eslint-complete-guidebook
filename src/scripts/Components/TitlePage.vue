@@ -29,7 +29,7 @@ export default class TitlePage extends Vue {
     position: relative;
     height: $page-height - $guide-inside-margin-vertical * 2;
     overflow: hidden;
-    font-family: 筑紫B丸ゴシック, sans-serif;
+    font-family: $font-family-sans-serif;
     text-align: center;
   }
 
@@ -49,7 +49,7 @@ export default class TitlePage extends Vue {
   & > .version {
     margin-top: 20mm;
     font-size: 11pt;
-    font-family: URW DIN, sans-serif;
+    font-family: $font-family-title-sub;
     font-weight: 400;
   }
 
