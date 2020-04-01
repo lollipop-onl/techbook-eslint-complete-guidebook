@@ -2,7 +2,7 @@
 AppPage
   .title-page
     .subtitle この１冊ですべてわかる！
-    .title ESLint Complete GuideBook
+    .title ESLint Complete RuleBook
     .version ESLint v7.0.0
     .author ロリポップランチャー 著
 </template>
@@ -29,7 +29,7 @@ export default class TitlePage extends Vue {
     @include container-full;
     position: relative;
     overflow: hidden;
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-body;
     text-align: center;
   }
 

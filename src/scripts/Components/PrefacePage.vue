@@ -38,20 +38,16 @@ export default class PrefacePage extends Vue {
   }
 
   & > .heading {
+    @include text-body(14pt);
     padding: 8mm 0 12mm;
-    font-family: $font-family-sans-serif;
-    font-size: 14pt;
     letter-spacing: 0.5em;
     text-indent: -0.5em;
     text-align: center;
   }
 
   & > .paragraph {
-    font-family: $font-family-serif;
-    font-size: 10pt;
+    @include text-body;
     line-height: 2;
-    letter-spacing: 0.1em;
-    text-indent: 1em;
   }
 
   & > .paragraph + .paragraph {
@@ -60,7 +56,7 @@ export default class PrefacePage extends Vue {
 
   & > .author {
     margin-top: 5mm;
-    font-family: $font-family-serif;
+    font-family: $font-family-body;
     font-size: 10pt;
     text-align: right;
   }

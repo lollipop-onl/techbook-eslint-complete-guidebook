@@ -52,7 +52,7 @@ export default class AttentionPage extends Vue {
 
   & > .attention > .body {
     opacity: 0.7;
-    font-family: $font-family-serif;
+    font-family: $font-family-body;
     line-height: 1.5;
     letter-spacing: 0.1em;
   }

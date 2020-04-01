@@ -5,7 +5,7 @@ AppPage
       .book-title
         .subtitle この１冊ですべてわかる！
         .title
-          | ESLint Complete GuideBook
+          | ESLint Complete RuleBook
           small.small ESLint v7.0.0
       .issuance-history
         .date 2020年 11月  1日
@@ -17,8 +17,6 @@ AppPage
         .body ロリポップランチャー
         .label 著　者
         .body simochee
-        .label イラスト
-        .body ナダムラ
         .label 連絡先
         .body contact@simochee.net
         .label 印刷・製本
@@ -47,7 +45,7 @@ export default class ColophonPage extends Vue {
     @include container;
     position: relative;
     height: $page-height - $guide-inside-margin-vertical * 2;
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-body;
   }
 
   & > .colophon {
@@ -97,7 +95,7 @@ export default class ColophonPage extends Vue {
   & {
     margin-top: 6mm;
     font-size: 9pt;
-    font-family: $font-family-serif;
+    font-family: $font-family-body;
     line-height: 1.2;
   }
 
@@ -120,7 +118,7 @@ export default class ColophonPage extends Vue {
 .book-information {
   & {
     margin-top: 3mm;
-    font-family: $font-family-serif;
+    font-family: $font-family-body;
     font-size: 10pt;
     line-height: 1.8;
   }
